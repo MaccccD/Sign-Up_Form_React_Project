@@ -30,7 +30,7 @@ function PersonalDetails() {
   return (
     //first step of the form is the personal details:
     <div>
-      <h1>Heyyyy, Welcome to our Gen Zs Dating Site!!!</h1>
+      <h1>Heyyyy, Welcome to our Gen Zs Dating App!!!</h1>
 
        <form onSubmit={HandlePersonalDetails}>
         <input type='text' placeholder='Enter Name' onChange={(e)=>setName(e.target.value)} required/>
