@@ -10,7 +10,7 @@ import React, { createContext, useState } from 'react';
     const [authenticate, SetAuthenticate] = useState(false);
 
     function privateDetails(name, surname, IdNumber, DOB){
-      if(name === "Dumzii" && surname === "Mofolo" && IdNumber === "0123456789" && DOB === "2005"){
+      if(name && surname && IdNumber && DOB === ""){
         setUser(name, surname, IdNumber, DOB);
         SetAuthenticate(true);
         return true;
