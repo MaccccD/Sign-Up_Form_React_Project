@@ -19,20 +19,21 @@ function Address() {
          event.preventDefault();
          if(houseNumber && streetName && city && postCode .trim()){
             privateAddress(houseNumber, streetName, city, postCode);
-            navigate("/Confirmation");
+            navigate("/ToDoList");
          }
     }
 
 
   return (
     <div>
-       <h1>Hyyyy, Welcome to our Gen Zs Dating Site!!!</h1>
+       <h1>Hyyyy, Welcome to our Gen Z's Dating Site!!!</h1>
+        <p className='text'>House Deets: </p>
       <form onSubmit={HandleAddressDetails}>
       <input type='text' placeholder='Enter House Number' onChange={(d)=> setHouseNumber(d.target.value)} required/>
       <input type='text' placeholder='Enter Street Name' onChange={(d)=> setStreetName(d.target.value)} required/>
       <input type='text' placeholder='Enter City ' onChange={(d)=> setCity(d.target.value)} required/>
       <input type='text' placeholder='Enter Post Code' onChange={(d)=> setPostCode(d.target.value)} required/>
-      <button style={{backgroundColor: 'green', borderRadius: 16, width: 100, height: 50}}>Confirm</button>
+      <button style={{backgroundColor: 'green', borderRadius: 16, width: 100, height: 50}}>Next</button>
 </form>
     </div>
   )

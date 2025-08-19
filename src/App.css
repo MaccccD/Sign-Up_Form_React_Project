@@ -3,17 +3,36 @@
 }
 
 *{
-  background-color: rgb(59, 113, 9);
+  background-color: white;
+}
+.text {
+  color: black;
+  margin: 20px;
+  font-weight: bold;
 }
 button{
   background-color: blue;
   border-radius: 15px;
   border: #282c34;
   width: 130px;
+  margin: 20px;
   height: 150px;
+  cursor: pointer;
 }
 button:hover{
   background-color: green;
+}
+input {
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: grey;
+    color: black;
+}
+::placeholder{
+  color: antiquewhite;
 }
 /* .App-logo {
   height: 40vmin;

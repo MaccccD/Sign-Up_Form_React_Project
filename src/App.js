@@ -1,3 +1,4 @@
+import "./App.css";
 import PersonalDetails from './Components/PersonalDetails';
 import Address from './Components/Address';
 import Confirmation from './Components/Confirmation';
