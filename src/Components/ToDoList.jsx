@@ -33,8 +33,10 @@ function ToDoList() {
         return (
         <li key={index}>
           {task}
+          <input type='checkbox'/>
         </li>
-        )
+        );
+       
       })}
      </ul>
     </div>
