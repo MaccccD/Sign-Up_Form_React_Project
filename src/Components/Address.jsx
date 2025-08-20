@@ -26,7 +26,7 @@ function Address() {
 
   return (
     <div>
-       <h1>Hyyyy, Welcome to our Gen Z's Dating Site!!!</h1>
+       <h1>Heyyyy, Welcome to my collection of passion project built w React.js</h1>
         <p className='text'>House Deets: </p>
       <form onSubmit={HandleAddressDetails}>
       <input type='text' placeholder='Enter House Number' onChange={(d)=> setHouseNumber(d.target.value)} required/>

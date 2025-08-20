@@ -30,7 +30,7 @@ function ToDoList() {
         return (
         <li key={index}>
           {task}
-          <input type='checkbox' className='checkbox' checked = {task.completed}/>
+          <input type='checkbox' className='checkbox' checked = {completed = false}/>
         </li>
         );
        
