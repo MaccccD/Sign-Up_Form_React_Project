@@ -45,11 +45,11 @@ function ToDoList() {
     const ToggleTaskCompletion = (taskChecked) =>{ // asked for help but the reason why it wasn't working was bc i was cllaing the toggle fucntion isntead of passing the bollean value in the "checked" propertyy
      const updatedTasks = tasksHolder.map((task)=>{
       if(task.id === taskChecked){
-        return {...task, completed: !task.completed}
+        return {...task, completed: !task.completed} // bc initiually the completion is false so you turn it into the opposite by pitti g the exclammation to make it true.
       }
       return task;
      });
-     setTasksHolder(updatedTasks);
+     setTasksHolder(updatedTasks); // this would be the tasks that have not yet been completed bc the task that was completed is done, leaving ones that are in-complete as ytr
     }
     
    
