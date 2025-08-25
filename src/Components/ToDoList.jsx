@@ -34,6 +34,14 @@ function ToDoList() {
         alert("this item has been removed alreadyy");
         return;
       }
+    };
+
+    const completeTasks = (taskChecked) =>{
+      if(completed === taskChecked){
+        setCompleted(true);
+        alert("This task has just been completed.")
+        return;
+      }
     }
     
    
@@ -53,7 +61,7 @@ function ToDoList() {
         return (
         <li key={index}>
           {task}
-          <input type='checkbox' className='checkbox'/>
+          <input type='checkbox' className='checkbox' checked= {completeTasks}/>
         </li>
         );
        
