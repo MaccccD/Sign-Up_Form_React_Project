@@ -7,6 +7,11 @@ function ToDoList() {
    
 
     function AddTasks(){
+      //checking if a task has been added to the holder before showing it:
+      if(tasksHolder != null){
+        alert("Please add task first!");
+        return;
+      }
       //add tasks typed into the holder
       const newTask = { // changed to this to object destructruring . Kinda like an Enum but in js
         id: Date.now(),
@@ -19,10 +24,7 @@ function ToDoList() {
       setTasks(""); // clear tasks. Need to add the value prop so that it connects the tasks to this as well
       console.log("a new task has been added to the tasks holder");
       console.log(tasksHolder);
-      if(tasksHolder != null){
-        alert("Please add task first !");
-        return;
-      }
+      
     }
 
     const removeTasks = (itemToRemove)=> {
@@ -37,7 +39,7 @@ function ToDoList() {
          console.log("the recent tasks has been deleted from the list"); 
 
         if(!tasksHolder.includes(itemToRemove)){
-        alert("this item has been removed alreadyy");
+        alert("this item has been removed alreadyyyyy");
         return;
       }
     };
@@ -58,7 +60,7 @@ function ToDoList() {
       <h1>Welcome to your Daily To-Do List Task Planner.</h1>
       <p>In here, you'll be able to add tasks that you need to complete and tick them off when they are complete.</p>
       <br/>
-      <input type='text' placeholder='Enter your tasks' value={tasks} onChange={(t)=> setTasks(t.target.value)} onKeyDown={(t)=> t.key === 'Enter' && AddTasks} /> 
+      <input type='text' placeholder='Enter your tasks' value={tasks} onChange={(t)=> setTasks(t.target.value)} onKeyUp={(t)=> t.key === 'Enter' && AddTasks} /> 
       <br/>
       <button onClick={AddTasks} className='tasks'>Add Tasks</button>
       <br/>
