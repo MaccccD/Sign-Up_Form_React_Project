@@ -10,6 +10,7 @@ function BubbleSort() {
      function displayNumbers (){
       let numbers = ["34, 45, 65, 78, 88, 34, 67, 99, 75, 78"];
       setNumbersHolder(...numbersholder, numbers);
+      alert("Numbers of the bubble sortbare now showing!");
       console.log(" numbers have been added into the holder");
       
      }
