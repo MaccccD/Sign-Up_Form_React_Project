@@ -12,13 +12,14 @@ function BubbleSort() {
 
      function displayNumbers (){
       setNumbersHolder(...numbersholder, numbers);
-      alert("Numbers of the bubble sortbare now showing!");
+      alert("Numbers of the bubble sort now showing!");
       console.log(" numbers have been added into the holder");
       
      }
 
      function ArrangeNumbers(){
       numbers.sort((a, b)=> (b, a));
+      alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order");
      }
   return (
