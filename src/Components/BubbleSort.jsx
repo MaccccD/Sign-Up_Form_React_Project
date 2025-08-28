@@ -7,12 +7,19 @@ function BubbleSort() {
     const [swap, setSwap] = useState(false);
 
 
+    let numbers = ["34, 45, 65, 78, 88, 34, 67, 99, 75, 78"];
+
+
      function displayNumbers (){
-      let numbers = ["34, 45, 65, 78, 88, 34, 67, 99, 75, 78"];
       setNumbersHolder(...numbersholder, numbers);
       alert("Numbers of the bubble sortbare now showing!");
       console.log(" numbers have been added into the holder");
       
+     }
+
+     function ArrangeNumbers(){
+      numbers.sort((a, b)=> (b, a));
+      console.log("numbers have been sorted in ascending order");
      }
   return (
     <div>
@@ -29,6 +36,8 @@ function BubbleSort() {
         );
        })}
     </div>
+    <br/>
+    <button onClick={ArrangeNumbers}>Sort Numbers</button>
     </div>
   )
 }
