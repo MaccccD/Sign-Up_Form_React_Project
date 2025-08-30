@@ -36,10 +36,11 @@ button:hover{
 .tasks {
   background-color: blue;
   border-radius: 15px;
-  width: 100px;
+  width: 90px;
   height: 60px;
   cursor: pointer;
 }
+
 input {
     display: flex;
     margin: 10px;

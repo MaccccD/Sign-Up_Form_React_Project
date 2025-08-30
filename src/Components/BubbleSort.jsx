@@ -10,15 +10,25 @@ function BubbleSort() {
     const nav = useNavigate();
 
 
-    let numbers = ["34, 45, 65, 78, 88, 34, 67, 99, 75, 78"];
+    let numbers = ["34", 
+      "45", 
+      "65", 
+      "78", 
+      "88", 
+      "34", 
+      "67", 
+      "99", 
+      "75", 
+      "78"];
 
 
-     function displayNumbers (){
+     function storeNumbers (){
       setNumbersHolder(...numbersholder, numbers);
       alert("Numbers of the bubble sort now showing!");
       console.log(" numbers have been added into the holder");
-      
+     
      }
+
 
      function ArrangeNumbers(){
       numbers.sort((a, b)=> (b, a));
@@ -31,19 +41,21 @@ function BubbleSort() {
     <div>
     <h1 class="heading">Dumzi's Entry-level Algorithms Practice Exercises(with React)</h1>
     <p class="Text">Bubble Sort Visualizer:
-     building a visual bubble sort that shows how elements "bubble up" in their correct positions. </p>  
-     <br/><br/>
-     <button onClick={displayNumbers}>Display Numbers</button>
+     building a visual bubble sort that shows how elements "bubble up" in their correct positions. </p> 
       <div>
        <h1>Bubble Sort Numbers:</h1>
        {numbersholder.map((number, index)=>{
         return(
-          <span key={index}>{number}</span>
+          <li key={index}>
+           {number}
+          </li>
         );
        })}
     </div>
+     <br/><br/>
+     <button onClick={storeNumbers} className='tasks'>Display Numbers</button>
     <br/>
-    <button onClick={ArrangeNumbers}>Sort Numbers</button>
+    <button onClick={ArrangeNumbers} className='tasks'>Sort Numbers</button>
     </div>
   )
 }
