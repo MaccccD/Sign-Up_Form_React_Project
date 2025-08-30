@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useNavigate } from 'react'
 
 function BubbleSort() {
     //setting up the states :
     const [numbersholder, setNumbersHolder] = useState([]);
     const [sort, setSorted] = useState(false);
     const [swap, setSwap] = useState(false);
+
+    const nav = useNavigate();
 
 
     let numbers = ["34, 45, 65, 78, 88, 34, 67, 99, 75, 78"];
@@ -22,6 +24,8 @@ function BubbleSort() {
       alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order");
      }
+
+   
   return (
     <div>
     <h1 class="heading">Dumzi's Entry-level Algorithms Practice Exercises(with React)</h1>

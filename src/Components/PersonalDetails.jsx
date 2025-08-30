@@ -40,7 +40,7 @@ function PersonalDetails() {
         <button style={{backgroundColor: 'green', borderRadius: 16, width: 100, height: 50}}>Next</button>
       </form>
     </div>
-  )
+  );
 }
 
 export default PersonalDetails;

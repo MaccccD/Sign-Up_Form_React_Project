@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate } from 'react';
 
 function ToDoList() {
     //setting up the states :
     const [tasks, setTasks] = useState("");
     const [tasksHolder, setTasksHolder] = useState([]);
    
+    const nav= useNavigate();
 
     function AddTasks(){
       //checking if a task has been added to the holder before showing it:
@@ -26,7 +27,10 @@ function ToDoList() {
       console.log(tasksHolder);
       
     }
-
+   function Navigate(){
+    nav("BubbleSort");
+    console.log("the next page has loaded");
+   }
     const removeTasks = (itemToRemove)=> {
       if(tasksHolder.length === 0){ // instead of using includes , you need to check if the holder is emepty first
          alert("No tasks have been added yet so there is nothing to delete");
@@ -47,6 +51,7 @@ function ToDoList() {
     const ToggleTaskCompletion = (taskChecked) =>{ // asked for help but the reason why it wasn't working was bc i was cllaing the toggle fucntion isntead of passing the bollean value in the "checked" propertyy
      const updatedTasks = tasksHolder.map((task)=>{
       if(task.id === taskChecked){
+        alert("Task has been completed");
         return {...task, completed: !task.completed} // bc initiually the completion is false so you turn it into the opposite by pitti g the exclammation to make it true.
       }
       return task;
@@ -80,6 +85,8 @@ function ToDoList() {
         );
       })}
      </ul>
+     <br/>
+     <button className='tasks' onClick={Navigate}>Next Challenge</button>
     </div>
   )
 }
