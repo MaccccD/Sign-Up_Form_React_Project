@@ -1,4 +1,5 @@
-import React, { useState, useNavigate } from 'react';
+import React, { useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function ToDoList() {
     //setting up the states :
@@ -28,7 +29,7 @@ function ToDoList() {
       
     }
    function Navigate(){
-    nav("BubbleSort");
+    nav("/BubbleSort");
     console.log("the next page has loaded");
    }
     const removeTasks = (itemToRemove)=> {
