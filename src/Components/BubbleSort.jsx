@@ -28,7 +28,7 @@ function BubbleSort() {
       console.log(" numbers have been added into the holder");
      
      };
-     function ArrangeNumbers(){
+     function ArrangeNumbers(){ // ask for help with this !
       numbers.sort((a, b)=> (b, a));
       alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order");
