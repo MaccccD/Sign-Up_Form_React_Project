@@ -20,6 +20,17 @@ function BubbleSort() {
       "75", 
       "78"];
 
+      let index0 = 0;
+      let index1 = 1;
+      let index2 = 2;
+      let index3 = 3;
+      let index4 = 4;
+      let index5 = 5;
+      let index6 = 6;
+      let index7 = 7;
+      let index8 = 8;
+      let index9= 9;
+
 
      function storeNumbers (){
       setNumbersHolder(...numbersholder, numbers);
