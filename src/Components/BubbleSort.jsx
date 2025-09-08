@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 function BubbleSort() {
     //setting up the states :
     const [numbersholder, setNumbersHolder] = useState([]);
-    const [sort, setSorted] = useState(false);
     const [swap, setSwap] = useState(false);
 
     const nav = useNavigate();
