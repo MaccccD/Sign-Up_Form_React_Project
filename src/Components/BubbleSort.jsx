@@ -44,6 +44,15 @@ function BubbleSort() {
       console.log("numbers have been sorted in ascending order");
      };
 
+     function SwapNumbers(){
+      numbers.map((num)=>{
+       num[index0], num[index1] = num[index1], num[index0];
+       num[index1], num[index2] = num[index2], num[index1];
+       num[index2], num[index3] = num[index3], num[index2];
+       console.log("the numbers are being swapped !");
+      })
+     }
+
    
   return (
     <div>
@@ -64,7 +73,10 @@ function BubbleSort() {
      <button onClick={storeNumbers} className='tasks'>Display Numbers</button>
     <br/>
     <button onClick={ArrangeNumbers} className='tasks'>Sort Numbers</button>
+    <br/>
+    <button onClick={SwapNumbers}className='tasks'>Swap Numbers</button>
     </div>
+    
   )
 }
 
