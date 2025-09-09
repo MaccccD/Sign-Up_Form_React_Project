@@ -46,11 +46,12 @@ function BubbleSort() {
 
      function SwapNumbers(){
       numbers.map((num)=>{
-       num[index0], num[index1] = num[index1], num[index0];
-       num[index1], num[index2] = num[index2], num[index1];
-       num[index2], num[index3] = num[index3], num[index2];
-       console.log("the numbers are being swapped !");
-      })
+        return(
+       num[index0], num[index1] = num[index1], num[index0],
+       num[index1], num[index2] = num[index2], num[index1],
+       num[index2], num[index3] = num[index3], num[index2],
+       console.log("the numbers are being swapped !"));
+      });
      }
 
    
