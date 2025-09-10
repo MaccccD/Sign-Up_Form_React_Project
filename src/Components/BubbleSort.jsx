@@ -34,14 +34,14 @@ function BubbleSort() {
      function storeNumbers (){
       setNumbersHolder(...numbersholder, numbers);
       alert("Numbers of the bubble sort now showing!");
-      console.log(" numbers have been added into the holder");
+      console.log(" numbers have been added into the holder"); // this works
      
      };
      function ArrangeNumbers(){ // ask for help with this !
       numbers.sort((a, b)=> (b, a));
       setNumbersHolder(numbers); //update the number based on the sort!
       alert("Numbers have now be sorted in ascending order");
-      console.log("numbers have been sorted in ascending order");
+      console.log("numbers have been sorted in ascending order"); // i do this in the console but te number's aren't being re arranged as they should visually
      };
 
      function SwapNumbers(){
@@ -58,7 +58,7 @@ function BubbleSort() {
        num[index6], num[index7] = num[index7], num[index6],
        num[index7], num[index8] = num[index8], num[index7],
        num[index8], num[index9] = num[index9], num[index8],
-       console.log("the numbers are being swapped !"));
+       console.log("the numbers are being swapped !")); // this isn't working and i'm not sure why
       });
      }
 
