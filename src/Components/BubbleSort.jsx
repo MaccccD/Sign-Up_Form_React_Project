@@ -39,12 +39,15 @@ function BubbleSort() {
      };
      function ArrangeNumbers(){ // ask for help with this !
       numbers.sort((a, b)=> (b, a));
+      setNumbersHolder(numbers); //update the number based on the sort!
       alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order");
      };
 
      function SwapNumbers(){
+       
       numbers.map((num)=>{
+        
         return(
        num[index0], num[index1] = num[index1], num[index0],
        num[index1], num[index2] = num[index2], num[index1],
