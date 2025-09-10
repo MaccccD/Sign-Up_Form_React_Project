@@ -8,17 +8,16 @@ function BubbleSort() {
 
     const nav = useNavigate();
 
-
-    let numbers = ["34", 
-      "45", 
-      "65", 
-      "78", 
-      "88", 
-      "34", 
-      "67", 
-      "99", 
-      "75", 
-      "78"];
+    let numbers = [34,
+      45, 
+      65, 
+      78, 
+      88, 
+      34, 
+      67, 
+      99, 
+      75, 
+      78];
 
       let index0 = 0;
       let index1 = 1;
@@ -50,6 +49,12 @@ function BubbleSort() {
        num[index0], num[index1] = num[index1], num[index0],
        num[index1], num[index2] = num[index2], num[index1],
        num[index2], num[index3] = num[index3], num[index2],
+       num[index3], num[index4] = num[index4], num[index3],
+       num[index4], num[index5] = num[index5], num[index4],
+       num[index5], num[index6] = num[index6], num[index5],
+       num[index6], num[index7] = num[index7], num[index6],
+       num[index7], num[index8] = num[index8], num[index7],
+       num[index8], num[index9] = num[index9], num[index8],
        console.log("the numbers are being swapped !"));
       });
      }
