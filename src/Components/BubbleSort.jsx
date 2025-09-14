@@ -38,7 +38,7 @@ function BubbleSort() {
       }
       setNumbersHolder([...numbers]); //after code review: changed from '...numbersholder,number' to just '..number' to create copy of the numbers of the array.
       alert("Numbers of the bubble sort now showing!");
-      console.log(" numbers have been added into the holder"); // this works
+      console.log("numbers have been added into the holder"); // this works
      
      };
      function ArrangeNumbers(){ // ask for help with this !
