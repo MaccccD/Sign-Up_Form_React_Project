@@ -32,10 +32,6 @@ function BubbleSort() {
 
 
      function storeNumbers (){
-      if(numbersholder.length === 0) {
-        alert("Display numbers first papa");
-        return;
-      }
       setNumbersHolder([...numbers]); //after code review: changed from '...numbersholder,number' to just '..number' to create copy of the numbers of the array.
       alert("Numbers of the bubble sort now showing!");
       console.log("numbers have been added into the holder"); // this works
@@ -44,9 +40,10 @@ function BubbleSort() {
      function ArrangeNumbers(){ // ask for help with this !
       if(numbersholder.length === 0){
         alert("Display numbers first papa!");
+        return;
       }
-      const sortedNumbers = setNumbersHolder([...numbersholder]).sort((a, b)=> (a - b));
-      // numbers.sort((a, b)=> (a - b));
+      const sortedNumbers = setNumbersHolder([...numbersholder]).sort((a, b)=> (a - b)); //access numbers already in the holder and sort those
+     
       setNumbersHolder(sortedNumbers); //update the number based on the sort!
       alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order"); // i do this in the console but te number's aren't being re arranged as they should visually
