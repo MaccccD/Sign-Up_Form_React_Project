@@ -36,14 +36,12 @@ function BubbleSort() {
       alert("Numbers of the bubble sort now showing!");
       console.log("numbers have been added into the holder"); // this works
      
+     // console.log(numbersholder);
+     
      };
      function ArrangeNumbers(){ // ask for help with this !
-      if(numbersholder.length === 0){
-        alert("Display numbers first papa!");
-        return;
-      }
-      const sortedNumbers = setNumbersHolder([...numbersholder]).sort((a, b)=> (a - b)); //access numbers already in the holder and sort those
-     
+     const sortedNumbers = setNumbersHolder([...numbersholder]); //access numbers already in the holder and sort those
+      numbersholder.sort((a, b)=> (a - b));
       setNumbersHolder(sortedNumbers); //update the number based on the sort!
       alert("Numbers have now be sorted in ascending order");
       console.log("numbers have been sorted in ascending order"); // i do this in the console but te number's aren't being re arranged as they should visually
@@ -70,8 +68,8 @@ function BubbleSort() {
    
   return (
     <div>
-    <h1 class="heading">Dumzi's Entry-level Algorithms Practice Exercises(with React)</h1>
-    <p class="Text">Bubble Sort Visualizer:
+    <h1 className="heading">Dumzi's Entry-level Algorithms Practice Exercises(with React)</h1>
+    <p className="Text">Bubble Sort Visualizer:
      building a visual bubble sort that shows how elements "bubble up" in their correct positions. </p> 
       <div>
        <h1>Bubble Sort Numbers:</h1>
